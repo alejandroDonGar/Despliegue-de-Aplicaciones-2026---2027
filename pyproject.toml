@@ -1,0 +1,12 @@
+[project]
+name = "despliegue-de-aplicaciones"
+version = "0.1.0"
+description = "Web con las prácticas de Despliegue de Aplicaciones Web (Zensical)"
+readme = "README.md"
+authors = [
+    { name = "Alejandro Donate Garcia", email = "AlexDoGa.work@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "zensical>=0.0.65",
+]

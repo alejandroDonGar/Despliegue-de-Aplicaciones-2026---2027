@@ -1,18 +1,23 @@
 [project]
-site_url = "https://www.example.com/"
-site_name = "Documentation"
-# site_description = "Your project description"
-# site_author = "Your name"
+site_url = "https://alejandrodongar.github.io/Despliegue-de-Aplicaciones-2026---2027/"
+site_name = "Despliegue de Aplicaciones Web"
+site_description = "Prácticas de Despliegue de Aplicaciones Web · 2º DAM 2026-2027"
+site_author = "Alejandro Donate García"
 
-# copyright = "Copyright &copy; 2026 Your name"
+repo_url = "https://github.com/alejandroDonGar/Despliegue-de-Aplicaciones-2026---2027"
+repo_name = "alejandroDonGar/Despliegue-de-Aplicaciones-2026---2027"
 
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
-# edit_uri = "edit/main/docs/"
-
+# Menú de la web. Práctica nueva: crear docs/utX/nombre-practica/index.md y añadir su línea aquí.
+# (Sin "nav" se genera solo a partir de las carpetas, pero los títulos salen sin tildes: "Ut1")
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  { "Inicio" = "index.md" },
+  { "UT1" = [
+      "ut1/index.md",
+      { "Práctica guiada: uv + Zensical" = [
+          "ut1/practica-guiada-uv/index.md",
+          { "Markdown en 5 minutos" = "ut1/practica-guiada-uv/markdown.md" },
+      ]},
+  ]},
 ]
 
 # extra_css = ["stylesheets/extra.css"]
@@ -22,7 +27,7 @@ nav = [
 # variant = "classic"
 # custom_dir = "overrides"
 # favicon = "images/favicon.png"
-language = "en"
+language = "es"
 features = [
   "announce.dismiss",
   # "content.action.edit",
