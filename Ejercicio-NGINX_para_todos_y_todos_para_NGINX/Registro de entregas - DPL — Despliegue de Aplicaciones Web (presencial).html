@@ -1,0 +1,4117 @@
+<!DOCTYPE html>
+<html lang="es" class="js-focus-visible js" data-platform="Linux x86_64" data-js-focus-visible=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="https://dpl-f1facc.gitlab.io/evaluacion/practicas/">
+      
+      
+        <link rel="next" href="https://dpl-f1facc.gitlab.io/evaluacion/preparacion-examen/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="https://dpl-f1facc.gitlab.io/assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.64">
+    
+    
+      
+        <title>Registro de entregas - DPL — Despliegue de Aplicaciones Web (presencial)</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="Registro%20de%20entregas%20-%20DPL%20%E2%80%94%20Despliegue%20de%20Aplicaciones%20Web%20(presencial)_files/main.40d3fdbb.min_AYnu.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link rel="stylesheet" href="Registro%20de%20entregas%20-%20DPL%20%E2%80%94%20Despliegue%20de%20Aplicaciones%20Web%20(presencial)_files/css_AYnu.css">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navegación"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#registro-de-entregas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="https://dpl-f1facc.gitlab.io/" title="DPL — Despliegue de Aplicaciones Web (presencial)" class="md-header__button md-logo" aria-label="DPL — Despliegue de Aplicaciones Web (presencial)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navegación">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"></path></svg>
+    </label>
+    <div class="md-header__title md-header__title--active" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DPL — Despliegue de Aplicaciones Web (presencial)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Registro de entregas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Buscar">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Buscar">
+  <button type="button" class="md-search__button">
+    Buscar
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs" hidden="">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://dpl-f1facc.gitlab.io/" class="md-tabs__link">
+        
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/introduccion/" class="md-tabs__link">
+          
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/ut01/" class="md-tabs__link">
+          
+  
+  UT1 — Git, documentación y CI/CD
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/ut02/" class="md-tabs__link">
+          
+  
+  UT2 — Arquitecturas Web y servidores Web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/ut03/" class="md-tabs__link">
+          
+  
+  UT3 — Administración y seguridad de servidores Web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/ut04/" class="md-tabs__link">
+          
+  
+  UT4 — Servidores de aplicaciones y despliegue
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/ut05/" class="md-tabs__link">
+          
+  
+  UT5 — Transferencia de archivos y despliegue
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/ut06/" class="md-tabs__link">
+          
+  
+  UT6 — DNS, directorio y servicios de red
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="https://dpl-f1facc.gitlab.io/evaluacion/practicas/" class="md-tabs__link">
+          
+  
+  Evaluación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="https://dpl-f1facc.gitlab.io/recursos/glosario/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" style="top: 48px;">
+                <div class="md-sidebar__scrollwrap" style="height: 759px;">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://dpl-f1facc.gitlab.io/" title="DPL — Despliegue de Aplicaciones Web (presencial)" class="md-nav__button md-logo" aria-label="DPL — Despliegue de Aplicaciones Web (presencial)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"></path></svg>
+
+    </a>
+    DPL — Despliegue de Aplicaciones Web (presencial)
+  </label>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inicio
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/introduccion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Introducción
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Introducción
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/introduccion/modulo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  El módulo DPL: RA, CE y contenidos
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/introduccion/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Metodología
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/introduccion/entorno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Entorno de trabajo
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/introduccion/evaluacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Evaluación
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut01/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  UT1 — Git, documentación y CI/CD
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  UT1 — Git, documentación y CI/CD
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/teoria/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Git y control de versiones
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/teoria/documentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Documentación y herramientas colaborativas
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/teoria/ci-cd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  CI/CD: integración y despliegue continuos
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-01-git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Repositorio dpl-despliegue
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-02-colaboracion-git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Flujo colaborativo
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-03-prepara-entorno-docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Prepara tu entorno (Docker)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-24-git-branching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Git avanzado: ramas y flujos
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-25-github-actions-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — CI/CD con GitHub Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut02/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  UT2 — Arquitecturas Web y servidores Web
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  UT2 — Arquitecturas Web y servidores Web
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/arquitecturas-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Arquitecturas Web
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/http-https/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  HTTP y HTTPS
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/estructura-app-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Estructura de una aplicación Web
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/servidor-web-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  El servidor Web nginx
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/gunicorn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Gunicorn (servidor de aplicaciones Python)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/php-fpm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  PHP-FPM (servidor de aplicaciones PHP)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/teoria/cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Despliegue en la nube (AWS y Terraform)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-04-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — nginx en contenedor
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-05-calculadora-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Calculadora Python con nginx y Gunicorn
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-06-php-fpm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Calculadora PHP con nginx y PHP-FPM
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-17-red-logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Red, logs y diagnóstico
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-26-terraform-aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Despliegue en AWS con Terraform
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut03/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  UT3 — Administración y seguridad de servidores Web
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  UT3 — Administración y seguridad de servidores Web
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/teoria/virtual-hosts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Server blocks de nginx
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/teoria/administracion-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Administración avanzada de nginx
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/teoria/autenticacion-acceso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Autenticación y control de acceso
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/teoria/https-certificados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  HTTPS, certificados y SSL/TLS
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-07-vhosts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Server blocks
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-08-https/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — HTTPS con certificado autofirmado
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-09-modulos-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Módulos de nginx (image_filter)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-18-vhosts-autenticacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Server blocks con autenticación
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-19-https-auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — HTTPS solo con autenticación
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-27-http2-http3-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — HTTP/2 y HTTP/3 en nginx
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut04/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  UT4 — Servidores de aplicaciones y despliegue
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  UT4 — Servidores de aplicaciones y despliegue
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/teoria/servidores-aplicaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Servidores de aplicaciones
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/teoria/frameworks-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Frameworks Web
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/teoria/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Docker
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/teoria/base-datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Base de datos para el despliegue
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/teoria/despliegue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Despliegue y seguridad del servidor de aplicaciones
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-10-docker-basico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Laboratorio Docker
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-11-postgresql-pgadmin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — PostgreSQL y pgAdmin
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-12-despliegue-compose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Despliegue con Docker Compose
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-20-despliegue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Despliegue de una aplicación
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-28-node-express/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Aplicación Node/Express
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-29-flask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Aplicación Flask
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-30-wildfly-java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — WAR en WildFly (Java)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-31-compose-php-mysql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Compose PHP + MySQL
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-32-wordpress-compose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — WordPress con Compose
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_16">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut04/material/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Material de laboratorio
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_16" id="__nav_6_16_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_16_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6_16">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Material de laboratorio
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/material/frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Frontend Vite (Web Components)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/material/spa/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  SPA React
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/material/spa/vue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  SPA Vue
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut04/material/spa/svelte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  SPA Svelte
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut05/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  UT5 — Transferencia de archivos y despliegue
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  UT5 — Transferencia de archivos y despliegue
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut05/teoria/ftp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Servidores de transferencia de archivos (FTP)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut05/teoria/ssh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  SSH como servicio
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut05/practicas/guiada-13-ftp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Servidor FTP
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut05/practicas/guiada-14-ssh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Servicio SSH
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut05/practicas/guiada-21-ftp-seguro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Transferencia segura
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="https://dpl-f1facc.gitlab.io/ut06/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  UT6 — DNS, directorio y servicios de red
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  UT6 — DNS, directorio y servicios de red
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/teoria/dns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  DNS y resolución de nombres
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/teoria/servicio-directorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Servicio de directorio
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-15-dns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — DNS para una aplicación Web
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-16-directorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Servicio de directorio
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-22-dns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — DNS para un despliegue
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-23-integracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Integración y diagnóstico
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-33-ldap-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Práctica guiada — Autenticación LDAP en nginx
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked="checked">
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Evaluación
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Evaluación
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/evaluacion/practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Guía de prácticas y entregas
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Registro de entregas
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="https://dpl-f1facc.gitlab.io/evaluacion/entregables/" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Registro de entregas
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link md-nav__link--passed">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ¿Qué vas a aprender?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-modelo-de-entrega-microproyectos-independientes" class="md-nav__link md-nav__link--passed">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. El modelo de entrega: microproyectos independientes
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-formato-comun-de-toda-entrega" class="md-nav__link md-nav__link--passed md-nav__link--active">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Formato común de toda entrega
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-entregas-por-unidad-y-trimestre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Entregas por unidad y trimestre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Entregas por unidad y trimestre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#t1-ut1-ra6-y-ut2-ra1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        T1 — UT1 (RA6) y UT2 (RA1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t2-ut3-ra2-y-ut4-ra3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        T2 — UT3 (RA2) y UT4 (RA3)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t3-ut5-ra4-y-ut6-ra5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        T3 — UT5 (RA4) y UT6 (RA5)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practicas-de-ampliacion-formativas-no-evaluables" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Prácticas de ampliación (formativas, no evaluables)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-errores-frecuentes-que-restan-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Errores frecuentes que restan puntos
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Resumen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacion-curricular" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Relación curricular
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/evaluacion/preparacion-examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Preparación de los exámenes
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/evaluacion/recuperacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Recuperación
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10">
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Recursos
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Recursos
+
+            </label>
+            <ul class="md-nav__list">
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/recursos/glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Glosario
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/recursos/comandos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Referencia de comandos
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dpl-f1facc.gitlab.io/recursos/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Documentación oficial
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" style="top: 48px;">
+                <div class="md-sidebar__scrollwrap" style="height: 759px;">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link md-nav__link--passed">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ¿Qué vas a aprender?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-modelo-de-entrega-microproyectos-independientes" class="md-nav__link md-nav__link--passed">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. El modelo de entrega: microproyectos independientes
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-formato-comun-de-toda-entrega" class="md-nav__link md-nav__link--passed md-nav__link--active">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Formato común de toda entrega
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-entregas-por-unidad-y-trimestre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Entregas por unidad y trimestre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Entregas por unidad y trimestre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#t1-ut1-ra6-y-ut2-ra1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        T1 — UT1 (RA6) y UT2 (RA1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t2-ut3-ra2-y-ut4-ra3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        T2 — UT3 (RA2) y UT4 (RA3)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t3-ut5-ra4-y-ut6-ra5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        T3 — UT5 (RA4) y UT6 (RA5)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practicas-de-ampliacion-formativas-no-evaluables" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Prácticas de ampliación (formativas, no evaluables)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-errores-frecuentes-que-restan-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Errores frecuentes que restan puntos
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Resumen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relacion-curricular" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Relación curricular
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="https://dpl-f1facc.gitlab.io/" class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="https://dpl-f1facc.gitlab.io/evaluacion/practicas/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="registro-de-entregas">Registro de entregas<a class="headerlink" href="#registro-de-entregas" title="Permanent link">¶</a></h1>
+<h2 id="que-vas-a-aprender">¿Qué vas a aprender?<a class="headerlink" href="#que-vas-a-aprender" title="Permanent link">¶</a></h2>
+<p>Esta página es el <strong>registro único de entregas</strong> del módulo: cada <strong>práctica guiada</strong> se entrega al <strong>campus virtual</strong>
+ y aquí se documenta qué se entrega, con qué formato y con qué 
+resultados de aprendizaje (RA) y criterios de evaluación (CE) se 
+relaciona. Cada práctica enlaza aquí para conocer sus reglas comunes.</p>
+<h2 id="1-el-modelo-de-entrega-microproyectos-independientes">1. El modelo de entrega: microproyectos independientes<a class="headerlink" href="#1-el-modelo-de-entrega-microproyectos-independientes" title="Permanent link">¶</a></h2>
+<p>Todas las entregas del curso son <strong>microproyectos independientes y aislados</strong>:</p>
+<ul>
+<li>Cada entrega vive en <strong>su propia carpeta</strong> con <strong>su propio repositorio Git</strong> (<code>git init</code> en esa carpeta).</li>
+<li>Ninguna entrega exige haber realizado entregas anteriores: el material del profesor se <strong>copia</strong>, no se construye, y cada microproyecto se puede realizar de forma independiente.</li>
+<li>Lo que se aprende en una unidad se <strong>reutiliza por conocimiento</strong>, no por dependencia de ficheros.</li>
+</ul>
+<h2 id="2-formato-comun-de-toda-entrega">2. Formato común de toda entrega<a class="headerlink" href="#2-formato-comun-de-toda-entrega" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong><code>README.md</code> con el paso a paso</strong> — documenta QUÉ se hizo, CÓMO y el RESULTADO de cada paso, con los <strong>comandos exactos</strong> usados (instalación dentro del contenedor, configuración, comprobación) y los <strong>problemas encontrados y su solución</strong>. No es un copia-pega de los apuntes: es una historia ordenada del trabajo realizado.</li>
+<li><strong>Un commit por cambio realizado</strong> — cada paso termina con un commit descriptivo de dos partes:</li>
+<li><strong>subject</strong> corto en imperativo (p. ej. <code>Instalar nginx y verificar el servicio</code>);</li>
+<li><strong>cuerpo</strong> largo (qué, cómo y por qué), con <code>git commit -m "subject" -m "cuerpo"</code>.</li>
+<li><strong>Autoría de los commits</strong> — <code>git config user.name</code> debe coincidir con el <strong>nombre y apellidos</strong> del alumnado en el aula virtual y <code>git config user.email</code> con el <strong>correo del aula virtual</strong>. Se comprueba con <code>git log --format='%an &lt;%ae&gt;' | sort -u</code>.</li>
+<li><strong>Enlace al repositorio remoto</strong> — el README incluye la URL del repositorio donde está publicado el microproyecto (GitHub, GitLab o Gitea).</li>
+<li><strong>Evidencias en Markdown</strong> — salidas reales de comandos en bloques de código y diagramas Mermaid. <strong>No se exigen capturas de pantalla.</strong> Cuando la práctica lo pida, se añade un script de comprobación.</li>
+<li><strong>ZIP con la carpeta <code>.git</code> incluida</strong> — la entrega se comprime incluyendo el historial completo del microproyecto. <strong>Si no se adjunta <code>.git</code>, la práctica no se valora.</strong></li>
+<li><strong>Entrega en el campus virtual.</strong></li>
+<li><strong>RA/CE asociados</strong> — cada entregable declara sus resultados de aprendizaje y criterios de evaluación del módulo (currículo oficial en <a href="https://dpl-f1facc.gitlab.io/introduccion/modulo/">El módulo DPL</a>).</li>
+</ol>
+<p>El entorno de trabajo (contenedor de laboratorio <code>dpl-lab</code>, cliente <code>dpl-cliente</code>, carpeta <code>~/dpl/</code>) está descrito en <a href="https://dpl-f1facc.gitlab.io/introduccion/entorno/">Entorno de trabajo</a>.</p>
+<h2 id="3-entregas-por-unidad-y-trimestre">3. Entregas por unidad y trimestre<a class="headerlink" href="#3-entregas-por-unidad-y-trimestre" title="Permanent link">¶</a></h2>
+<p>Todas las prácticas obligatorias pesan lo mismo (su media es el 50 % de la nota; ver <a href="https://dpl-f1facc.gitlab.io/introduccion/evaluacion/">Evaluación</a>). Las prácticas de ampliación/cloud son formativas y no entran en la media.</p>
+<h3 id="t1-ut1-ra6-y-ut2-ra1">T1 — UT1 (RA6) y UT2 (RA1)<a class="headerlink" href="#t1-ut1-ra6-y-ut2-ra1" title="Permanent link">¶</a></h3>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>UT</th>
+<th>Práctica guiada</th>
+<th>Entregable</th>
+<th>RA/CE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UT1</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-01-git/">Repositorio dpl-despliegue</a></td>
+<td>Microproyecto <code>ut01-guiada-01/</code></td>
+<td>RA6-e, RA6-f, RA6-g</td>
+</tr>
+<tr>
+<td>UT1</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-02-colaboracion-git/">Flujo colaborativo</a></td>
+<td>Microproyecto <code>ut01-guiada-02/</code></td>
+<td>RA6-a, RA6-b, RA6-c, RA6-d, RA6-h</td>
+</tr>
+<tr>
+<td>UT1</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut01/practicas/guiada-03-prepara-entorno-docker/">Prepara tu entorno (Docker)</a></td>
+<td>Microproyecto <code>ut01-guiada-03/</code></td>
+<td>RA1-e, RA1-f, RA1-i</td>
+</tr>
+<tr>
+<td>UT2</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-04-nginx/">nginx en contenedor</a></td>
+<td>Microproyecto <code>ut02-guiada-04/</code></td>
+<td>RA1-b, RA1-c, RA1-f, RA1-g, RA1-h, RA1-i</td>
+</tr>
+<tr>
+<td>UT2</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-05-calculadora-python/">Calculadora Python con nginx y Gunicorn</a></td>
+<td>Microproyecto <code>ut02-guiada-05/</code></td>
+<td>RA1-b, RA1-c, RA1-d, RA1-e, RA1-f, RA1-g, RA1-h, RA1-i</td>
+</tr>
+<tr>
+<td>UT2</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-06-php-fpm/">Calculadora PHP con nginx y PHP-FPM</a></td>
+<td>Microproyecto <code>ut02-guiada-06/</code></td>
+<td>RA1-b, RA1-c, RA1-d, RA1-e, RA1-f, RA1-g, RA1-h, RA1-i</td>
+</tr>
+<tr>
+<td>UT2</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut02/practicas/guiada-17-red-logs/">Red, logs y diagnóstico</a></td>
+<td>Microproyecto <code>ut02-guiada-17/</code></td>
+<td>RA1-f, RA1-g, RA1-i</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3 id="t2-ut3-ra2-y-ut4-ra3">T2 — UT3 (RA2) y UT4 (RA3)<a class="headerlink" href="#t2-ut3-ra2-y-ut4-ra3" title="Permanent link">¶</a></h3>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>UT</th>
+<th>Práctica guiada</th>
+<th>Entregable</th>
+<th>RA/CE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UT3</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-07-vhosts/">Server blocks</a></td>
+<td>Microproyecto <code>ut03-guiada-07/</code></td>
+<td>RA2-a, RA2-c, RA2-g, RA2-h</td>
+</tr>
+<tr>
+<td>UT3</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-08-https/">HTTPS con certificado autofirmado</a></td>
+<td>Microproyecto <code>ut03-guiada-08/</code></td>
+<td>RA2-e, RA2-f, RA2-g</td>
+</tr>
+<tr>
+<td>UT3</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-09-modulos-nginx/">Módulos de nginx (image_filter)</a></td>
+<td>Microproyecto <code>ut03-guiada-09/</code></td>
+<td>RA2-a, RA2-b, RA2-c, RA2-d, RA2-e, RA2-f, RA2-g, RA2-h, RA2-i, RA2-j</td>
+</tr>
+<tr>
+<td>UT3</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-18-vhosts-autenticacion/">Server blocks con autenticación</a></td>
+<td>Microproyecto <code>ut03-guiada-18/</code></td>
+<td>RA2-c, RA2-d, RA2-g</td>
+</tr>
+<tr>
+<td>UT3</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut03/practicas/guiada-19-https-auth/">HTTPS solo con autenticación</a></td>
+<td>Microproyecto <code>ut03-guiada-19/</code></td>
+<td>RA2-d, RA2-e, RA2-f, RA2-g</td>
+</tr>
+<tr>
+<td>UT4</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-10-docker-basico/">Laboratorio Docker</a></td>
+<td>Microproyecto <code>ut04-guiada-10/</code></td>
+<td>RA3-a, RA3-b, RA3-e, RA3-f, RA3-i</td>
+</tr>
+<tr>
+<td>UT4</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-11-postgresql-pgadmin/">PostgreSQL y pgAdmin</a></td>
+<td>Microproyecto <code>ut04-guiada-11/</code></td>
+<td>RA3-b, RA3-e, RA3-g, RA3-i</td>
+</tr>
+<tr>
+<td>UT4</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-12-despliegue-compose/">Despliegue con Docker Compose</a></td>
+<td>Microproyecto <code>ut04-guiada-12/</code></td>
+<td>RA3-c, RA3-d, RA3-f, RA3-g, RA3-h, RA3-i</td>
+</tr>
+<tr>
+<td>UT4</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut04/practicas/guiada-20-despliegue/">Despliegue de una aplicación</a></td>
+<td>Microproyecto <code>ut04-guiada-20/</code></td>
+<td>RA3-a a RA3-i</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3 id="t3-ut5-ra4-y-ut6-ra5">T3 — UT5 (RA4) y UT6 (RA5)<a class="headerlink" href="#t3-ut5-ra4-y-ut6-ra5" title="Permanent link">¶</a></h3>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>UT</th>
+<th>Práctica guiada</th>
+<th>Entregable</th>
+<th>RA/CE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UT5</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut05/practicas/guiada-13-ftp/">Servidor FTP</a></td>
+<td>Microproyecto <code>ut05-guiada-13/</code></td>
+<td>RA4-a, RA4-b, RA4-c, RA4-d, RA4-e</td>
+</tr>
+<tr>
+<td>UT5</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut05/practicas/guiada-14-ssh/">Servicio SSH</a></td>
+<td>Microproyecto <code>ut05-guiada-14/</code></td>
+<td>RA4-a, RA4-b, RA4-d, RA4-e, RA4-g, RA4-h</td>
+</tr>
+<tr>
+<td>UT5</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut05/practicas/guiada-21-ftp-seguro/">Transferencia segura</a></td>
+<td>Microproyecto <code>ut05-guiada-21/</code></td>
+<td>RA4-a a RA4-h</td>
+</tr>
+<tr>
+<td>UT6</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-15-dns/">DNS para una aplicación Web</a></td>
+<td>Microproyecto <code>ut06-guiada-15/</code></td>
+<td>RA5-a, RA5-b, RA5-g</td>
+</tr>
+<tr>
+<td>UT6</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-16-directorio/">Servicio de directorio</a></td>
+<td>Microproyecto <code>ut06-guiada-16/</code></td>
+<td>RA5-c, RA5-d, RA5-e, RA5-f, RA5-h</td>
+</tr>
+<tr>
+<td>UT6</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-22-dns/">DNS para un despliegue</a></td>
+<td>Microproyecto <code>ut06-guiada-22/</code></td>
+<td>RA5-a, RA5-b, RA5-g, RA5-h</td>
+</tr>
+<tr>
+<td>UT6</td>
+<td><a href="https://dpl-f1facc.gitlab.io/ut06/practicas/guiada-23-integracion/">Integración y diagnóstico</a></td>
+<td>Microproyecto <code>ut06-guiada-23/</code></td>
+<td>RA5-a a RA5-h · RA2-h · RA3-g</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3 id="practicas-de-ampliacion-formativas-no-evaluables">Prácticas de ampliación (formativas, no evaluables)<a class="headerlink" href="#practicas-de-ampliacion-formativas-no-evaluables" title="Permanent link">¶</a></h3>
+<p>Las prácticas de ampliación (Git avanzado, CI/CD con GitHub Actions, 
+cloud con AWS/Terraform, HTTP/2-3, Node/Express, Flask, WildFly, Compose
+ PHP+MySQL, WordPress, LDAP+nginx) se marcan como <strong>formativas</strong>: sirven para profundizar y <strong>no entran en la media</strong>. Se entregan con el mismo formato si el docente lo indica.</p>
+<h2 id="4-errores-frecuentes-que-restan-puntos">4. Errores frecuentes que restan puntos<a class="headerlink" href="#4-errores-frecuentes-que-restan-puntos" title="Permanent link">¶</a></h2>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>Error</th>
+<th>Cómo evitarlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrega sin la carpeta <code>.git</code></td>
+<td>Comprimir siempre el microproyecto completo (<code>.git</code> incluido); sin él no se valora</td>
+</tr>
+<tr>
+<td>Mensajes de commit pobres (<code>upd</code>, <code>final</code>) o varios cambios en un commit</td>
+<td>Un commit por cambio con <code>git commit -m "subject" -m "cuerpo"</code></td>
+</tr>
+<tr>
+<td>Autoría de los commits incorrecta</td>
+<td>Configurar <code>user.name</code> con el nombre y apellidos del aula virtual y <code>user.email</code> con su correo; comprobar con <code>git log --format='%an &lt;%ae&gt;' \| sort -u</code></td>
+</tr>
+<tr>
+<td>README sin comandos, sin paso a paso o sin enlace al repositorio remoto</td>
+<td>Documentar qué se hizo, cómo (comandos) y el resultado de cada paso, e incluir la URL del remoto</td>
+</tr>
+<tr>
+<td>Nombre o estructura de carpeta distinta</td>
+<td>Copiar el árbol indicado en la práctica, carácter a carácter</td>
+</tr>
+<tr>
+<td>Capturas en vez de salidas reales</td>
+<td>Pegar las salidas de los comandos en bloques de código Markdown; no se exigen capturas</td>
+</tr>
+<tr>
+<td>Credenciales reales subidas</td>
+<td>Revisar <code>grep -RniE "password\|passwd\|secret\|PRIVATE KEY"</code> antes de entregar</td>
+</tr>
+<tr>
+<td>Adjuntar la configuración sin probarla</td>
+<td>Ejecutar los comandos de comprobación y pegar su salida</td>
+</tr>
+<tr>
+<td>Entregar fuera de plazo</td>
+<td>Respetar las fechas que publique el docente en el aula virtual; una práctica no entregada en fecha y forma se califica con 0</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2 id="5-resumen">5. Resumen<a class="headerlink" href="#5-resumen" title="Permanent link">¶</a></h2>
+<ul>
+<li>Cada práctica guiada se entrega al campus virtual con su microproyecto y sus evidencias.</li>
+<li>Toda entrega: microproyecto independiente con su propio <code>git</code>, <code>README.md</code> con comandos paso a paso y enlace remoto, un commit por cambio con autoría del aula, evidencias Markdown, ZIP con <code>.git</code> y RA/CE declarados.</li>
+<li>Las prácticas suman el 50 % de la nota; los exámenes trimestrales, el otro 50 % (ver <a href="https://dpl-f1facc.gitlab.io/introduccion/evaluacion/">Evaluación</a>).</li>
+</ul>
+<h2 id="relacion-curricular">Relación curricular<a class="headerlink" href="#relacion-curricular" title="Permanent link">¶</a></h2>
+<p><strong>RA:</strong> todos (RA1 a RA6), según las tablas del apartado
+ 3; los CE de cada práctica se listan en su propia relación curricular. 
+Texto oficial en <a href="https://dpl-f1facc.gitlab.io/introduccion/modulo/">El módulo DPL: RA, CE y contenidos</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="" style="top: 64px;" tabindex="-1">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m16 12-4-4-4 4M12 16V8"></path></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.indexes","navigation.path","navigation.top","search.suggest","toc.follow","content.code.copy","content.code.select"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copiado al portapapeles","clipboard.copy":"Copiar al portapapeles","search.result.more.one":"1 más en esta página","search.result.more.other":"# más en esta página","search.result.none":"No se encontraron documentos","search.result.one":"1 documento encontrado","search.result.other":"# documentos encontrados","search.result.placeholder":"Teclee para comenzar búsqueda","search.result.term.missing":"Falta","select.version":"Seleccionar versión"},"version":null}</script>
+    
+    
+      <script src="Registro%20de%20entregas%20-%20DPL%20%E2%80%94%20Despliegue%20de%20Aplicaciones%20Web%20(presencial)_files/bundle.c04ba553.min_AYnu.js"></script><div style="position: fixed; height: 100%; top: 0px; z-index: 4;"></div>
+      
+    
+  
+</body></html>
