@@ -7,7 +7,7 @@ site_author = "Alejandro Donate García"
 repo_url = "https://github.com/alejandroDonGar/Despliegue-de-Aplicaciones-2026---2027"
 repo_name = "alejandroDonGar/Despliegue-de-Aplicaciones-2026---2027"
 
-# Menú de la web. Práctica nueva: crear docs/utX/nombre-practica/index.md y añadir su línea aquí.
+# Menú de la web. Práctica nueva: crear docs/utX/<nombre>.md (resumen + enlace a su repo) y añadir su línea aquí.
 # (Sin "nav" se genera solo a partir de las carpetas, pero los títulos salen sin tildes: "Ut1")
 nav = [
   { "Inicio" = "index.md" },
@@ -17,6 +17,9 @@ nav = [
           "ut1/practica-guiada-uv/index.md",
           { "Markdown en 5 minutos" = "ut1/practica-guiada-uv/markdown.md" },
       ]},
+  ]},
+  { "UT2" = [
+      "ut2/index.md",
   ]},
 ]
 
