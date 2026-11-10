@@ -3,7 +3,7 @@ Repositorio clase Despliegues
 
 (Sacar toda la documentacion del repo y crear documentacion local completa y super detallada, con ejemplo, explicaciones de todos los elementos, usos, definiciones, ubicaciones de elementos, analizar el codigo y explicaciones de todas las carpetas del repositorio del profesor, sacar infor completa y detallada de TODO. Usando tambien la informacion de la pagina del profesor con todo el temario dado y por dar *https://dpl-f1facc.gitlab.io/*. Mirar en todas las ramas del repo tambien y mirar los issues y pull request en mi github para ver que cosas estan por implementar y NO hacerlo para publicarlo en el repo del profe sino para implementarlo en la documentacion MIA de mi repositoriop de despliegues. Haz lo mismo con los commits, ver los cambios del repositorio para entender cambios que han ocurrido, estado del principio y actual por si estos cambios pueden explicarse con alguna parte del temario. "Esto se cambio porque al principio se iba a hacer una cosa por el temario y para cosas futuras relacionadas con el temario se hizo esto")
 (Revisar las actividades hechas para ver lo que hemos hecho con ssh y nginx)
-(IR poco a poco un dia haciendo todas las practicas de la pagina del profesor *https://dpl-f1facc.gitlab.io/* de los temas 1 y 2
+(IR poco a poco un dia haciendo todas las practicas de la pagina del profesor *https://dpl-f1facc.gitlab.io/* de los temas 1 y 2)
 
 1:
 
@@ -38,7 +38,7 @@ Repositorio clase Despliegues
 	Práctica guiada — HTTP/2 y HTTP/3 en nginx
 
 (Si alguna ya se ha pedido para entregar a clase la saltamos. Por tenerlas como documentacion, si se pueden hacer dentro del repositorio mio las hacemos, cada una con su carpeta o zona y cuando tengamos que hacer una actividad entregable lo sacamos y hacemos poco a poco como hemos echo las otras dos ya entregadas(con pasos poco a poco y commits y readme.md) y hacemos un repo separado como hemos hecho)
-)
+
 (Hacer todo esto para tener un .md del temario completo en el repositorio mio personal de despliegues. Añadir a la automatizacion que tambien se comprube el repo del profesor para ver si hubieron cambios y traerlos a la documentacion)
 
 (El texto a continuacion es de explicaciones de clase. Adaptar al temario nuevo)
@@ -144,3 +144,30 @@ upgrade
 	settea la info al user ya terminando la migracion llamando a los otros helper
 	se crean la tabla user
 	se añade la columna a task
+
+---
+temario de conversacion en clase - 10.11.2026
+
+**jwt** -> json web token. No autenticamos. si pusieramos el admin: true, luego el back podria comprobar si el user autenticado esta autorizado.
+
+**autenticacion (donde estaria jwt)** -> Verificas que eres quien dices ser.
+**autorizacion** -> Permisos. Ser quien dices ser no significa tener permisos.
+**autenticacion de doble factor** -> Autenticar de dos veces de varias formas. 
+(explicar cada uno bien y sus diferencias auqnue esten estrechamente relacionados)
+
+porque metemos este json web token en nuestro despliegue con la migracion?
+
+delegacion de tareas y acceiones subagentes. en una rama separada en el repositorio del profesor. 
+
+**metodologias:**
+
+*tdd:*
+- revisar codigo
+- revisar tests
+
+*sdd:*
+- revisar codigo
+- revisar test
+- revisar documentacion agentica
+
+probar el **IDE zed**
