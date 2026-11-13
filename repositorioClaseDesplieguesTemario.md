@@ -171,3 +171,35 @@ delegacion de tareas y acceiones subagentes. en una rama separada en el reposito
 - revisar documentacion agentica
 
 probar el **IDE zed**
+
+---
+temario de conversacion en clase - 13.11.2026 (Clase principalmente de Zensical, Nginx y Kamal de repaso)
+
+Diagrama de como funciona zensical(hacer diagrama en alguna app de diagramas), pidiendo info desde el cliente a un server nginx devolviendo el churro de html, js y css con el build. Y luego usando cosas como js ajax de React para, tambien hacer peticiones pero insertarlas al churro inicial haciendo que la pagina sea "dinamica", luego esta ultima se conexta con servicios como TOMCAT o UUNICORN para tener la logica de negocio. 
+
+se puede redirigir desde la estatica usando nginx y haciendo proxy inverso con Kamal por ejemplo. Se le pasa el parametro host: appi.dominio.net (ej), host: app2.dominio.net (ej) va en el cuerpo de la peticion (igual que el token de jwt), le llega al proxy inverso (nginx o kamal) y redirige a la app1, app2, app3 ... Devuelve la respesta y la muestra en la pagina. 
+Con kamal (ej) -> server(contenedor 1: proxy-kamal, contenedor2: app1, contenedor3: app2, contenedor4: app3, .....)
+
+maquinaX -> IP de mi maquina.  En oracle(el que usamos en clase) -> abrir puertos. Puedes abrir el mismo puerto en varios contenedores porque para ellas piensan que son diferentes maquinas. Tmabien tienen IPs diferentes asignadas por docker. Las ips que tienen son privadas (172.17.0.0/16 -> 172.31.255.255/16 y 192.168.0.0/20 -> 192.168.240.0/20).
+
+El server matchea el puerto del server nginx con el de la maquina para que puedan conectarse. Como estan matcheadas, la infor entra en la ip de la maquina, esta se conecta con nginx y este rediriege a la appX, la appX responde y devuelve la infor a nginx y este luego manda al cliente.
+
+sobre la maquina para desplegar nuestro proyecto, tener una con una ip publica. BUscar un dominio para comprar para el proyecto
+
+hosta va en 
+proxy:
+	host: pagina.dominio.es
+	app_port: puerto
+	ssl: true
+
+(En le repositorio del profesor esta dentro de cada task-api/config/archivo.yml del proceso, production, staging, etc..)	
+
+docker ps del repo del profesor y como tiene configurado el contenedore de basecamp/kamal-proxy:
+proxy run
+0.0.0.0:80->80, [::]:80->80/tcp, 0.0.0.0:433/tcp, [::]:443->443/tcp
+
+aqui elos puertos se matchean.
+
+se pueden tener los mismos puertos abiertos porque kamal lo que hace es con el 0.0.0.0 es redirigir a diferentes ips disponibles permitiendo la compatibilidad de los puertos. 
+
+(toda esta infor esta pendiente de corregir, veriifcar y modificar en base a informacion de la pagina del profesor e informacion oficial de internet)
