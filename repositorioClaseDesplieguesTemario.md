@@ -203,3 +203,26 @@ aqui elos puertos se matchean.
 se pueden tener los mismos puertos abiertos porque kamal lo que hace es con el 0.0.0.0 es redirigir a diferentes ips disponibles permitiendo la compatibilidad de los puertos. 
 
 (toda esta infor esta pendiente de corregir, veriifcar y modificar en base a informacion de la pagina del profesor e informacion oficial de internet)
+
+---
+temario de conversacion en clase - 17.11.2026 
+
+`echo $?` <- Guarda el resultado del ultimo poprgrama que se ejecutor. Si salio todo bien sale un 0, si hay algun error, saldra el codigo correspondiente al error. Ej, 127 es comando no encontrado.
+
+(Temario para el examen sobre todo lo que hemos dado y lo uq ehay en el repo del profesor.)
+diff serv web y serv aplicacion
+flujo, como funciona y que partes tiene. Fichero yml -> directrices que usa Kamal, Kamal lee, y se conecta por SSH.
+Conectarnos sin contraseña a una maquina
+Estructura monolitica cliente-servidor
+Capa modelo -> BBDD
+Endpoints protegidos o no, que recibe X datos.
+Entorno virtual
+`Kamal deploy`
+POrque se usan contenedores para aislar
+Protocolos que se trabajan
+Como funciona la autenticacion, autorizacion y en que parte del flujo esta esta parte
+Automatizar la calidad del codigo, Ruff y demas herramientas.
+Antes de desplegar -> Lanzar los tests y justfile con sus definiciones. Bandit para comprobar la seguridad. Comprobar la migracion bien hecha, y preparar que pueda actualizar y hacer rollback. Si falla hay que hacer rollback de dos cosas, el contenedor y su imagen (con endpoints de -> app y healthcheck). (Buscar info sobre ruff y bandit e integrar a la documentacion de la asignatura, .io y proyecto de final de curso para su implementacion cuando toque)
+Pagina de herramientas como bandit o ruff. (PyPi)
+`mypy`
+Que se hace cuando hacemos migracion, como comprobamos y hacemos que funcione antes de hacerla oficial. Como seria el flujo? PReparar rolbaks, backups, hacer pruebas, hacer la migracion a horas de pocas concurrencia de usuarios. Que partes tiene ese proecso de migracion? Preparar la image, hacer la migracion,  bloquar todo lo que vaya al prozy y llevarlo al C2T(Estatico para informar a user que hay un proceso en proceso), demas pasos logicos, migrar los dtoas de los eseuqmas en la bbdd... (Protocolo completo en cuanto al despliegue, sin importar el lenguaje) 
