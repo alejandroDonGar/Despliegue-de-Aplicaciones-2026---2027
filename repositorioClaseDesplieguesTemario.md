@@ -226,3 +226,13 @@ Antes de desplegar -> Lanzar los tests y justfile con sus definiciones. Bandit p
 Pagina de herramientas como bandit o ruff. (PyPi)
 `mypy`
 Que se hace cuando hacemos migracion, como comprobamos y hacemos que funcione antes de hacerla oficial. Como seria el flujo? PReparar rolbaks, backups, hacer pruebas, hacer la migracion a horas de pocas concurrencia de usuarios. Que partes tiene ese proecso de migracion? Preparar la image, hacer la migracion,  bloquar todo lo que vaya al prozy y llevarlo al C2T(Estatico para informar a user que hay un proceso en proceso), demas pasos logicos, migrar los dtoas de los eseuqmas en la bbdd... (Protocolo completo en cuanto al despliegue, sin importar el lenguaje) 
+
+24.11.2026
+
+examen: 27.11.2026
+
+* Parte tipo test: 
+Ejemplos -> {
+
+}
+* Parte de explicacion del despliegue de kamal con nuestras palabras
