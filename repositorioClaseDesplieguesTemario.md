@@ -232,7 +232,66 @@ Que se hace cuando hacemos migracion, como comprobamos y hacemos que funcione an
 examen: 27.11.2026
 
 * Parte tipo test: 
-Ejemplos -> {
+Ejemplos dados por el profesor-> {
+- ¿Una app web con nginx con postgres y unicorn se organiza por capas cual de las asignaciones es correcta? Cliente-> Logica-> presentacion>_ datos o Cliente-> Nginx-> Postgres_>Logica o Cliente-Presentacion-Logica-Datos o Cliente-Presentacion-Logica-Datos
 
+- Que aporta https a http. Cigfra mediante certificado, comprime o sustituye udp o tcp
+
+- diferencia entre servidor web uy un server web como unicorn
+
+- Relaciona cada modelo o tecnologia con su definicio. Conteneodre, onpremise, cloud, IAAS, maquina virtual
+
+- Dos domimnios apunta a la misma ip al puerto 80. como elgie nginx el sitio al que servir
+
+- para que serve location en nginx
+
+- basic au envia en base 64, que inplicacones tiene. Server guada en texto plato , que la contraseñas se cifran con claves del server, que no esta cifrado. 
+
+- diferencia entre cerficiad letsencript o autocerificado. Menos bits de cloud autocifrado, lets encript no necesita clave privada...
+
+- relaciona cada directiva con funcion. defauult server, filter image, loadmodule, ...
+
+- que es wsgi. contrado enntre servidor, define como se entrega la peticiom, sistema de postgres que aplica cambios, ngix para serivios estatico, formato de plantilla httm para generar plantillas, formato de plantill auq eusa django.
+
+- diff web estatica y app web
+
+- protocolo en servidor web. http en capa 
+
+- unicor arranca con workpres 2, que significa? se crean dos server neginx y se reparten con dns, se ejecutan dos copias en puertos distintos con configuraciones distintas, 
+
+- nginx recive peticion dinamica y recibe error 502. Cual es el fallo mas comun? Gunicor no esta arrrancado o proxy apunta malk, el certificado caduco, el cliente no envio la cabecera de host... sercivio no esta funcionando...
+
+- orque porstgrs en docker compose usa un volumen àra los datos. para la persistencia.
+
+- relaciona cada elmenteo del despliegue con su funcion. pgadmin, serviciodb, init sql, variable postgresdb usr y pass, pghpa.conf
+
+- un clienet de ftp(solo tiene activo y pasivo, apuntar en apuntes) esta detras de un nad no consigue editar el directoro. IMplicito puerto 990, el activo servidor simrpe se concet,a pasivo porque el cliente abre la conection, el anonimo porque no requiere credenciales. 
+
+- relacona cada protocolo con cliente, https, ftp, scp, mstp, filecilla, sftp-. Sistema de trasnferencia,achivos entre equipos, correos electronicos....
+
+- que config es mas segura ara un server ftp en despliegues. 
+
+- que hace un server dns cuando recibe una consulkta recursiva. El dns entra en bucle y se staura, busca la respuesta y la devuelve., como la recursiva no usa cache...
+
+- relaciona cada registro dns con su funcion, soa, ns, cname, aaaa(ipv6), mx
+
+- en ldab(ut6). es el sistema de autenticacion para poder inciar a la misma cuenta desde varias maquinas. opcion -> bind
+
+- relaciona cada concepto de ldab con significado- dn, bind, groupo, ldab, contraseña, usuario, ldabs
+
+- relaciona cada concepto con funcio, commit, branch, remote, git ingore, ...
+
+- relaciona cada seccion del readme con contenido, comprobacion, problemas y socilion, enlace rmoto
+
+- orden razonable de pipeline de integracion continua... etaas
+
+- este docket fiel arranca tal que asi... comando... kamla tiene el puerto x per las peticiones no llegan al server. La imagen no se ejecuta como root, la app escucha en localhost y el proxy no alcanza, hay que publica el puerto 8888 con pass o falta la linea expose 8000...
+
+- ordena el proceso completo de registro login y comprobacion de jwt en fast api. cliente envia la cabecera, el backend guarda haseada, el back responde, el backen hasea, el user envia, el use post con toekn median form, el back comrpueba la pass, el back compreuab que ya no existe el user.
+
+- ordena el despliegue con migracion con alembic y rollback. stagin, produccion y pasos.... primero staging, y luego prod
+
+- que cifra la conecction en jwt. normalmente se pone el id del use 
 }
 * Parte de explicacion del despliegue de kamal con nuestras palabras
+- explicar todo lo que hemos visto en la asignatura hasta la fecha.
